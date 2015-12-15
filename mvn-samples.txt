@@ -1,0 +1,21 @@
+
+2 parent-maven-archetype:
+
+a) create
+mvn archetype:generate -B -DgroupId=org.ifollowyou.plugins -DartifactId=parent-maven-archetype -DarchetypeArtifactId=maven-archetype-archetype -Dversion=1.0
+
+b) modify and deploy
+mvn deploy
+
+c) test
+mvn archetype:generate -B -DarchetypeGroupId=org.ifollowyou.plugins -DarchetypeArtifactId=parent-maven-archetype -DarchetypeVersion=1.0 -DgroupId=myGroupId -DartifactId=myArtifactId -Dversion=1.0
+
+d) check
+check the pom.xml
+
+3 app-maven-archetype
+a) create
+mvn archetype:generate -DgroupId=org.ifollowyou.plugins -DartifactId=app-maven-plugin -DarchetypeArtifactId=maven-archetype-archetype -Dversion=1.0
+
+
+4 webapp-maven-plugin
